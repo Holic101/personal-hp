@@ -6215,18 +6215,41 @@ hr {
 
 section.about {
   background-image: url(../img/P7240616.jpg);
-  background-position: left bottom;
-  background-size: cover; }
-  section.about h2 {
-    color: #fff;
-    font-size: 60px;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
+  section.about video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background: transparent; }
+  section.about .title {
+    color: #ddd;
+    font-size: 50px;
     font-weight: 400;
     font-family: "Fira Sans", sans-serif;
     line-height: 1.1;
-    margin-left: -108px;
-    margin-top: 0; }
+    margin-top: 130px;
+    z-index: 2;
+    width: auto;
+    height: 180px;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 50px;
+    bottom: 0;
+    position: relative; }
   section.about .home-lead {
-    padding-bottom: 150px; }
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    color: #ddd; }
 
 @media (max-width: 640px) {
   section.about h2, section.about .home-lead {
