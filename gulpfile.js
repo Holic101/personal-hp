@@ -44,7 +44,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function () {
     return gulp.src('assets/css/main.scss')
         .pipe(sass({
-            includePaths: ['scss'],
+            includePaths: ['css'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -54,7 +54,7 @@ gulp.task('sass', function () {
 });
 
 /*
-*Trying to implement pug into gulp
+* implement pug into gulp
 */
 
 gulp.task("pug", function() {
@@ -68,8 +68,8 @@ gulp.task("pug", function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('assets/css/*', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
+    gulp.watch('assets/css/**',  ['sass']);
+    gulp.watch(['index.html', '*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_pugfiles/*.pug', ['pug'])
 });
 

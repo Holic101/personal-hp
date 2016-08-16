@@ -1,0 +1,26 @@
+mixin thumb
+  a(href="" style="background: yellow").project-thumb
+    .project-meta
+      .name Project name
+      .category Productivity
+
+section.thumbnails#projects
+  .flex.flex--center
+
+    .col-50
+      .project-wrap
+        +thumb
+        +thumb
+        +thumb
+        +thumb
+        +thumb
+        +thumb
+        +thumb
+        +thumb
+        +thumb
+
+    .col-50.flex.flex--center.order-first
+      .col-1
+        .desc-wrap
+          p.lead.outdented ...Here they come and they are great.
+          a(href="http://codepen.io/holic101").home-cta See All Projects

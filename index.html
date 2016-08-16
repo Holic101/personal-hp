@@ -1,14 +1,17 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: My personal portfolio page
 ---
-{% include hello.html %}
+<div class="home-wrap">
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  {% include header.html %}
+
+  <div class="home-sections">
+    {% include section-about.html %}
+    {% include section-portfolio.html %}
+    {% include section-thumbnails.html %}
+    {% include section-social.html %}
+    {% include section-contact.html %}
+    {% include section-footer.html %}
+  </div>
 </div>
