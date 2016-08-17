@@ -2,10 +2,9 @@ mixin nav-content()
   ul
     li: a(href="#about") About
     li: a(href="#portfolio") Portfolio
-    li: a(href="#projects") Projects
+    //- li: a(href="#projects") Projects
     li: a(href="#social") Social
     li: a(href="#contact") Contact
-
 
 .mobile-nav
   +nav-content()
@@ -19,5 +18,4 @@ header
 
     a(href="mailto:dietrich.kriworotow@gmail.com").email-link +email me
 
-    .mobile-nav-toggle
-      span
+    .mobile-nav-toggle: span

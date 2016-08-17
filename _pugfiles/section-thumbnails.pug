@@ -1,26 +1,55 @@
-mixin thumb
-  a(href="" style="background: yellow").project-thumb
-    .project-meta
-      .name Project name
-      .category Productivity
-
-section.thumbnails#projects
+section.thumbnails#portfolio
   .flex.flex--center
 
     .col-50
-      .project-wrap
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
+      .project-wrap.order-first
+        a(href="https://holic101.github.io/Simon-Game/" target="_blank" style="background-image: url(../assets/img/thumbs/simon-game.png)").project-thumb
+          .project-meta
+            .name Simon Game
+            .category Games
 
-    .col-50.flex.flex--center.order-first
+        a(href="http://codepen.io/Holic101/full/mEPazO/" target="_blank" style="background-image: url(../assets/img/thumbs/pomodoro.png)").project-thumb
+          .project-meta
+            .name Pomodoro Timer
+            .category Productivity
+
+        a(href="http://holic101.github.io/local-weather-app/" target="_blank" style="background-image: url(../assets/img/thumbs/weather.png)").project-thumb
+          .project-meta
+            .name Local Weather App
+            .category API interaction
+
+        a(href="http://codepen.io/Holic101/pen/EKRybQ" target="_blank" style="background-image: url(../assets/img/thumbs/quotes.png)").project-thumb
+          .project-meta
+            .name Random Quote Machine
+            .category Productivity
+
+        a(href="http://codepen.io/Holic101/full/OXMMQz/" target="_blank" style="background-image: url(../assets/img/thumbs/calculator.png)").project-thumb
+          .project-meta
+            .name JS Calculator
+            .category Productivity
+
+        a(href="http://codepen.io/Holic101/full/Bzapym/" target="_blank" style="background-image: url(../assets/img/thumbs/game-of-life.png)").project-thumb
+          .project-meta
+            .name The Game of Life
+            .category Games
+
+        a(href="http://codepen.io/Holic101/full/eZXjer/" target="_blank" style="background-image: url(../assets/img/thumbs/twitch.png)").project-thumb
+          .project-meta
+            .name Twitch.tv Program
+            .category API interaction
+
+        a(href="http://codepen.io/Holic101/full/KzBqvd/" target="_blank" style="background-image: url(../assets/img/thumbs/wikipedia.png)").project-thumb
+          .project-meta
+            .name Wikipedia Viewer
+            .category API interaction
+
+        a(href="http://codepen.io/Holic101/full/bZRdEP/" target="_blank" style="background-image: url(../assets/img/thumbs/tic-tac-toe.png)").project-thumb
+          .project-meta
+            .name Tic Tac Toe Game
+            .category Games
+
+    .col-50.flex.flex--center
       .col-1
         .desc-wrap
-          p.lead.outdented ...Here they come and they are great.
-          a(href="http://codepen.io/holic101").home-cta See All Projects
+          p.lead.outdented ...and present them on github and codepen.
+          a(href="http://codepen.io/holic101" target="_blank").home-cta See All Projects
