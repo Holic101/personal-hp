@@ -1,0 +1,49 @@
+section.about
+  background:
+    image: url(../img/P7240616.jpg)
+    position: center bottom
+    size: cover
+  position: relative
+  overflow: hidden
+
+  video
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    background: transparent
+
+  .title
+    color: $silver
+    font:
+      size: 50px
+      weight: 400
+      family: "Fira Sans", sans-serif
+    line-height: 1.1
+    margin-top: 130px
+    z-index: 2
+    width: auto
+    height: 180px
+    background-color: rgba(black, 0.9)
+    top: 50px
+    bottom: 0
+    position: relative
+    text-align: center
+
+  .home-lead
+    text-align: center
+    z-index: 2
+    position: relative
+    color: $silver
+
+@media (max-width: 640px)
+  section.about
+    h2, .home-lead
+      margin-left: auto
+      margin-right: auto
+      max-width: 300px
