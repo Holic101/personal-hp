@@ -1,8 +1,8 @@
 section.about
-  background:
-    image: url(../img/P7240616.jpg)
-    position: center bottom
-    size: cover
+  // background:
+  //   image: url(../img/P7240616.jpg)
+  //   position: center bottom
+  //   size: cover
   position: relative
   overflow: hidden
 
@@ -28,7 +28,7 @@ section.about
     margin-top: 130px
     z-index: 2
     width: auto
-    height: 180px
+    height: auto
     background-color: rgba(black, 0.9)
     top: 50px
     bottom: 0
@@ -43,7 +43,10 @@ section.about
 
 @media (max-width: 640px)
   section.about
-    h2, .home-lead
+    .title, .home-lead
       margin-left: auto
       margin-right: auto
-      max-width: 300px
+      margin-top: 0
+      font-size: 2.5em
+      max-width: 320px
+      height: auto
